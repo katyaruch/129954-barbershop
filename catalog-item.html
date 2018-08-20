@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Товар</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -38,7 +41,7 @@
         <p class="product-photo-full">
           <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
         </p>
-        <ul>
+        <ul class="product-photo-preview">
           <li><img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас"></li>
           <li><img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль"></li>
           <li><img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
@@ -87,7 +90,7 @@
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-      <form class="user" method="post" action="https://echo.htmlacademy.ru">
+      <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
         <p>
           <label class="visually-hidden" for="user-login">Логин</label>
           <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
